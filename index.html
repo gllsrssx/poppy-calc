@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="maximum-scale=1, initial-scale=1, width=device-width">
+    <title>Poppy Cost Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 10px;
+        }
+
+        .result-text {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mb-4">Poppy Cost Calculator</h1>
+
+        <div class="input-group">
+            <label for="duration" class="mr-2">Duration:</label>
+            <input type="number" id="duration" class="form-control" min="1" value="2">
+        </div>
+
+        <div class="input-group">
+            <label for="distance" class="mr-2">Distance:</label>
+            <input type="number" id="distance" class="form-control" min="0" value="300">
+        </div>
+
+        <div class="input-group">
+            <label for="subscription" class="mr-2">Subscription:</label>
+            <input type="checkbox" id="subscription" checked>
+        </div>
+
+        <div class="input-group">
+            <label for="abroad" class="mr-2">Abroad:</label>
+            <input type="checkbox" id="abroad" checked>
+        </div>
+
+        <div id="result" class="result-text"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
